@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
 import requests
-import sys
+import os
 
 name = input('누구의 정보를 읽어올까요? ')
 url = 'https://www.acmicpc.net/user/' + name
@@ -22,6 +22,7 @@ while temp < 10:
 
 if fp == None:
     print('그런 유저는 없어요!')
+    os.system('pause')
     exit(0)
 
 source = fp.read()
@@ -37,3 +38,5 @@ for i in items:
     val = ', '.join(tmp)
 
     print(key + ': ' + val)
+
+os.system('pause')
