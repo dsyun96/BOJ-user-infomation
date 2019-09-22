@@ -50,8 +50,9 @@ if __name__ == '__main__':
     name = name.split(',') # split by comma
     
     for names in name:
-        get_info(names)
-        print('') # new line
+        if names != '': # except ''
+            get_info(names)
+            print('') # new line
 
     #os.system('pause') 
     input('종료하려면 아무 키나 누르십시오...') # 쉘에서 cmd창 안뜨게
