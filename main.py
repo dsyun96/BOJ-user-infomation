@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
 import requests
-import os
+# import os // now useless
 
 def get_info(name):
     url = 'https://www.acmicpc.net/user/' + name
