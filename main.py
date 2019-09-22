@@ -50,7 +50,7 @@ if __name__ == '__main__':
     name = name.split(',') # split by comma
     
     for names in name:
-        if names != '':
+        if names != '': # except ''
             get_info(names)
             print('') # new line
 
