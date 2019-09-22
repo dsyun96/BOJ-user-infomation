@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
 import requests
-import os
+# import os // now useless
 
 def get_info(name):
     url = 'https://www.acmicpc.net/user/' + name
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     name = name.split(',') # split by comma
     
     for names in name:
-        if names != '': # except ''  
+        if names != '':
             get_info(names)
             print('') # new line
 
